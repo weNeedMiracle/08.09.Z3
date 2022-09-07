@@ -1,0 +1,49 @@
+public class Main {
+    public static void main(String[] args) {
+    Product p1 = new Product();
+    p1.name = "Курица";
+    p1.price = 71;
+    p1.rating = 4.1;
+    Product p2 = new Product();
+    p2.name = "Говядина";
+    p2.price = 99;
+    p2.rating = 4.5;
+    Product p3 = new Product();
+    p3.name = "Баранина";
+    p3.price = 88;
+    p3.rating = 4.2;
+    Product p4 = new Product();
+    p4.name = "Каждый день";
+    p4.price = 71;
+    p4.rating = 3.9;
+    Product p5 = new Product();
+    p5.name = "Простаквашено";
+    p5.price = 102;
+    p5.rating = 4.0;
+    Product p6 = new Product();
+    p6.name = "Greenfield";
+    p6.price = 110;
+    p6.rating = 5.0;
+    Product p7 = new Product();
+    p7.name = "Tess";
+    p7.price = 98;
+    p7.rating = 4.4;
+    Product p8 = new Product();
+    p8.name = "Lipton";
+    p8.price = 92;
+    p8.rating = 4.2;
+    kategory k1 = new kategory();
+    k1.name = "Мясо";
+    k1.mas = new Product[]{p1, p2, p3};
+    kategory k2 = new kategory();
+    k2.name = "Молоко";
+    k2.mas = new Product[]{p4, p5};
+    kategory k3 = new kategory();
+    k3.name = "Чай";
+    k3.mas = new Product[]{p6, p7, p8};
+    User u1 = new User();
+    u1.login = "wNM-";
+    u1.password = "87654321";
+    u1.basket.bought = new Product[]{p2, p6, p4};
+    }
+}
